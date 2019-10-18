@@ -1,0 +1,14 @@
+.ico { display: inline-block; background: url(/static/img/sprite.png) no-repeat -1000% -1000%;  }
+.ico-empty-info { width: 120px; height: 120px; background-position: 0px -263px; }
+.ico-entry-foot { width: 360px; height: 55px; background-position: -173px -90px; }
+.ico-entry-logo { width: 612px; height: 90px; background-position: 0px 0px; }
+.ico-file-edit { width: 100px; height: 100px; background-position: -173px -145px; }
+.ico-ico-line { width: 72px; height: 72px; background-position: -273px -173px; }
+.ico-ico-zone { width: 72px; height: 72px; background-position: -345px -173px; }
+.ico-info-logo { width: 173px; height: 173px; background-position: 0px -90px; }
+.ico-logo { width: 238px; height: 28px; background-position: -273px -145px; }
+.ico-move { width: 58px; height: 58px; background-position: -417px -173px; }
+.ico-sort-bottom { width: 1px; height: 40px; background-position: -475px -173px; }
+.ico-sort-top { width: 1px; height: 40px; background-position: -476px -173px; }
+.ico-zoom-in { width: 27px; height: 23px; background-position: -533px -90px; }
+.ico-zoom-out { width: 27px; height: 23px; background-position: -560px -90px; }

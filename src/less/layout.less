@@ -1,0 +1,121 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1366px;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+.app-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  /* background: url("~@assets/bg/bg.png") no-repeat; */
+  background-size: cover;
+}
+
+.app-main {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #eee;
+
+  .page-wrapper {
+    width: 100%;
+    height: calc(~"100% - 40px");
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+
+  .sidebar {
+    width: 300px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  .sidebar+.main {
+    width: calc(~"100% - 310px");
+    height: 100%;
+    padding: 10px;
+  }
+
+  .sidebar,
+  .main {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    .title {
+      height: 40px;
+      line-height: 40px;
+      text-indent: 10px;
+      background-color: #395d82;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    .content {
+      width: 100%;
+      height: calc(~"100% - 40px");
+      padding: 10px 20px;
+      .grid-wraper {
+        height: calc(~"100% - 40px");
+      }
+    }
+  }
+}
+
+.page {
+  .sidebar {
+    width: 280px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+  }
+
+  .module-main {
+    width: calc(~"100% - 290px");
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+  }
+}
+
+.tab-dialog {
+  .form-title {
+    display: none;
+  }
+
+  .form-area {
+    padding: 0 20px !important;
+  }
+
+  .el-form-item__label {
+    width: 180px !important;
+  }
+
+  .el-form-item__content {
+    margin-left: 180px !important;
+  }
+
+  .btns {
+    padding-left: 200px;
+  }
+
+  .form-area {
+    padding: 0 !important;
+  }
+
+  .el-tabs--border-card {
+    border: none;
+    box-shadow: none;
+  }
+}

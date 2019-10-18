@@ -1,0 +1,12 @@
+{
+  "retCode": 1,
+  "data": {
+    "gb28181": "{\"firmware\":\"\",\"model\":\"\",\"expires\":31104000,\"flag\":true,\"manuFacturer\":\"\",\"userName\":\"9700052000001\",\"keepAlive\":60,\"localPort\":5060,\"password\":\"123456\",\"timeout\":3,\"localIp\":\"31.97.18.1\"}",
+    "Sync": "true",
+    "StorageBackupSetting": "true",
+    "ServerBackupSetting": "{\"ss\":{\"backup\":false,\"id\":0,\"list\":[]},\"tvs\":{\"backup\":false,\"id\":0,\"list\":[]}}",
+    "TimingSetting": "{\"useRS422\":false,\"useNTP\":true,\"schedule\":\"01:00:00\"}",
+    "ControlReleaseTime": "3000",
+    "ControlOsdEnable": "true"
+  }
+}

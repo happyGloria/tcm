@@ -1,0 +1,102 @@
+.x-transform-style(@style) {
+	-webkit-transform-style: @style;
+	-moz-transform-style: @style;
+	-ms-transform-style: @style; // IE9 only
+	transform-style: @style;
+}
+.x-transform-origin(@origin) {
+	-webkit-transform-origin: @origin;
+	-moz-transform-origin: @origin;
+	-ms-transform-origin: @origin; // IE9 only
+	transform-origin: @origin;
+}
+.x-transition(@transition) {
+	-webkit-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+.x-transform(@transform) {
+	-webkit-transform: @transform;
+	-ms-transform: @transform; // IE9 only
+	-o-transform: @transform;
+ 	transform: @transform;
+}
+.x-animation(@animation) {
+	-webkit-animation: @animation;
+	-moz-animation: @animation;
+	-o-animation: @animation;
+	animation: @animation;
+}
+
+.x-animate-centerLoop() {
+  0% {
+    .x-transform(scale(1));
+  }
+  100% {
+    .x-transform(scale(2));
+  }
+}
+
+@-webkit-keyframes centerLoop {
+  .x-animate-centerLoop;
+}
+
+@-moz-keyframes centerLoop {
+  .x-animate-centerLoop;
+}
+
+@-o-keyframes centerLoop {
+  .x-animate-centerLoop;
+}
+
+@keyframes centerLoop {
+  .x-animate-centerLoop;
+}
+
+.x-centerLoop() {
+  .x-animation(centerLoop 0.75s linear 0s infinite alternate);
+}
+
+
+.x-animate-flicker-inside(){
+	0% {.x-transform(scale(0)); opacity: 1; top: -60px; left: -60px; width: 140px; height: 140px;}
+	45% {.x-transform(scale(0.5));opacity: 0.8;} 
+	100% {.x-transform(scale(0.7));opacity: 0;top: -60px; left: -60px; width: 140px; height: 140px;}
+}
+@-webkit-keyframes flicker-inside{
+    .x-animate-flicker-inside;
+}
+@-moz-keyframes flicker-inside{
+    .x-animate-flicker-inside;
+}
+@-o-keyframes flicker-inside{
+    .x-animate-flicker-inside;
+}
+@keyframes flicker-inside{
+    .x-animate-flicker-inside;
+}
+.x-flicker-inside(){
+	.x-animation(flicker-inside 1.5s linear 0.1s infinite);
+} 
+
+.x-animate-flicker-outside(){
+	0% {.x-transform(scale(0)); opacity: 1; top: -60px; left: -60px; width: 140px; height: 140px;}
+	55% {.x-transform(scale(0.8));opacity: 1;} 
+	100% {.x-transform(scale(1.1));opacity: 0;top: -60px; left: -60px; width: 140px; height: 140px;}
+}
+@-webkit-keyframes flicker-outside{
+    .x-animate-flicker-outside;
+}
+@-moz-keyframes flicker-outside{
+    .x-animate-flicker-outside;
+}
+@-o-keyframes flicker-outside{
+    .x-animate-flicker-outside;
+}
+@keyframes flicker-outside{
+    .x-animate-flicker-outside;
+}
+.x-flicker-outside(){
+	.x-animation(flicker-outside 1.5s linear 0.1s infinite);
+} 

@@ -1,0 +1,146 @@
+{
+  "610000200611121814": {
+    "id": "610000200611121814",
+    "no": "610000200611121814",
+    "name": "TCC调度员",
+    "siteType": "OCC",
+    "siteId": "520000200711255113",
+    "ip": "226.95.134.99",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"810000197312264877\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "650000197103061467": {
+    "id": "650000197103061467",
+    "no": "650000197103061467",
+    "name": "控制中心防灾值班员",
+    "siteType": "Station",
+    "siteId": "360000197505287486",
+    "ip": "35.93.26.225",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"340000201601011821\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "620000201206163726": {
+    "id": "620000201206163726",
+    "no": "620000201206163726",
+    "name": "控制中心行车调度员",
+    "siteType": "OCC",
+    "siteId": "520000200711255113",
+    "ip": "39.170.147.5",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"610000200902046260\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "310000199002256215": {
+    "id": "310000199002256215",
+    "no": "310000199002256215",
+    "name": "控制中心电力调度员",
+    "siteType": "Station",
+    "siteId": "410000198107064454",
+    "ip": "125.235.137.39",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"410000198107064454\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "540000197504157536": {
+    "id": "540000197504157536",
+    "no": "540000197504157536",
+    "name": "控制中心AFC调度员",
+    "siteType": "Station",
+    "siteId": "430000201404211877",
+    "ip": "200.52.92.209",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"620000198511101834\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "430000200003087209": {
+    "id": "430000200003087209",
+    "no": "430000200003087209",
+    "name": "车辆段 / 停车场防灾值班员",
+    "siteType": "Station",
+    "siteId": "610000200902046260",
+    "ip": "122.112.239.203",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"350000198001105688\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "710000201506057804": {
+    "id": "710000201506057804",
+    "no": "710000201506057804",
+    "name": "车辆段 / 停车场行车值班员",
+    "siteType": "Station",
+    "siteId": "810000197312264877",
+    "ip": "78.232.156.47",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"230000197811044459\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "450000198803226135": {
+    "id": "450000198803226135",
+    "no": "450000198803226135",
+    "name": "车辆段 / 停车场运转值班员",
+    "siteType": "Station",
+    "siteId": "350000199709050947",
+    "ip": "184.62.187.78",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"360000200605244293\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "520000199808205301": {
+    "id": "520000199808205301",
+    "no": "520000199808205301",
+    "name": "车辆段 / 停车场安保值班员",
+    "siteType": "Station",
+    "siteId": "360000200605244293",
+    "ip": "176.80.114.193",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"130000199311242227\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "530000200302262322": {
+    "id": "530000200302262322",
+    "no": "530000200302262322",
+    "name": "车站防灾值班员",
+    "siteType": "Station",
+    "siteId": "230000197811044459",
+    "ip": "117.39.33.106",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"120000197609275311\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "14000019840211894X": {
+    "id": "14000019840211894X",
+    "no": "14000019840211894X",
+    "name": "车站行车值班员",
+    "siteType": "Station",
+    "siteId": "540000200809265647",
+    "ip": "52.237.80.133",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"350000198903242227\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "36000019741212133X": {
+    "id": "36000019741212133X",
+    "no": "36000019741212133X",
+    "name": "换乘线路车站值班员",
+    "siteType": "Station",
+    "siteId": "340000197012066382",
+    "ip": "8.125.169.202",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"540000200809265647\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "820000199103319967": {
+    "id": "820000199103319967",
+    "no": "820000199103319967",
+    "name": "公安车站值班员",
+    "siteType": "Station",
+    "siteId": "350000201006061068",
+    "ip": "139.146.226.240",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"130000197609183531\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "340000201507043990": {
+    "id": "340000201507043990",
+    "no": "340000201507043990",
+    "name": "公安派出所调度员",
+    "siteType": "Station",
+    "siteId": "230000197811044459",
+    "ip": "125.28.51.205",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"650000199506286619\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "450000199106034781": {
+    "id": "450000199106034781",
+    "no": "450000199106034781",
+    "name": "公安派出所值班员",
+    "siteType": "Station",
+    "siteId": "120000197609275311",
+    "ip": "100.90.114.198",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"350000199709050947\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  },
+  "370000199502277080": {
+    "id": "370000199502277080",
+    "no": "370000199502277080",
+    "name": "公交总队调度员及其它部门人员",
+    "siteType": "Station",
+    "siteId": "410000198107064454",
+    "ip": "68.117.181.185",
+    "access": "{\"record\":true,\"download\":true,\"ip\":\"192.168.12.88,178.44.22.33\",\"real\":{\"Site| 2-3\":[\"430000201404211877\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"],\"Camera\":[]},\"ptz\":{\"Site\":[],\"Camera\":[\"9705000134\",\"9705000135\"],\"Civil\":[\"402-DeviceZone-1\",\"402-DeviceZone-4\",\"402-DeviceZone-2\",\"402-DeviceZone-5\",\"402-DeviceZone-3\",\"402-DeviceZone-6\"]},\"monitor\":\"1,2\"}"
+  }
+}

@@ -1,0 +1,224 @@
+*************************************************告警规则
+id:					告警规则id
+name:				规则名称(必填)
+detectionInterval:	检测间隔，分钟(必填)
+alertCount：		发现问题几次后，告警(必填)
+alertInterval:		发现问题后，检测间隔(必填)
+dealDelayed：		未恢复的告警，人工处理后，多久不在告警，分钟(必填)
+deviceType:			设备类型，不同的设备类型对应不同的阈值,对应【设备类型枚举接口】
+
+
+接口
+/fault/rule/add
+/fault/rule/edit
+/fault/rule/delete
+/fault/rule/list,有id返回一个对象，无id返回一个数组
+
+模拟数据
+{"id":1,"name":"服务器","detectionInterval":15,"alertCount":3,"alertInterval":5,"dealDelayed":30,"deviceType":"Server"}
+
+
+********************************获取告警预案接口，针对不同的设备类型、告警类型，可对应不同的预案
+/fault/getDealPlan
+id:				预案id，主键
+name:			预案名称(必填)
+deviceType:		设备类型(必填),对应【设备类型枚举接口】
+faultType:		告警类型(必填),对应【告警类型枚举接口】
+planDesc：		预案描述(必填)
+
+接口
+/fault/dealPlan/add
+/fault/dealPlan/edit
+/fault/dealPlan/delete
+/fault/dealPlan/list,有id返回一个对象，无id返回一个数组
+
+模拟数据
+[{"id":1,"name":"服务器离线","deviceType":"Server","faultType":380001,"planDesc":"去机房查看服务器"},...]
+
+*************************************************获取实时告警接口，
+实时表转历史表，两个触发条件
+1：告警自动恢复（faultStatus=0，dealStatus=2）
+2：人工将告警删除（dealStatus=3）
+id:				告警id，主键
+faultType:		告警类型,对应【告警类型枚举接口】
+faultLevel:		告警级别,0提示，1一般，2严重
+siteId:			告警所属节点
+deviceType:		设备类型
+deviceName:		设备名称
+faultDesc:		告警描述
+faultFirstTime:	首次告警时间
+faultLastTime:	最后告警时间
+dealStatus:		人工处理状态，0未处理，1处理中，2已处理（系统自动判断告警是否恢复，告警恢复后，自动修改），3人工消除（此条记录从实时表中删除，并更新到历史表中）
+dealTime:		人工处理时间
+dealUser:		处理人账号
+dealPlanDesc:	处理方案描述
+//faultStatus:	告警状态，告警自动恢复后=0，此条记录从实时表中删除，并更新到历史表中
+
+接口
+/fault/real/deal,人工处理，id[]，dealUser，dealPlanDesc
+/fault/real/list,此接口需要每隔数秒获取一次,faultFirstTime,faultLastTime,siteId,deviceType,faultType,faultLevel,dealStatus,dealUser
+
+模拟数据
+[{"id":1,"faultType":13158,"faultLevel":2,"siteId":1358,"deviceType":"Server","deviceName":"server_192.168.125.44","faultFirstTime":123123123,
+"faultLastTime":123123123123,"dealTime":123123123123,"dealStatus":1,"dealUser":"u1","dealPlanDesc":"重启服务器","faultDesc":"服务器离线"},...]
+
+
+*************************************************历史告警接口
+id:				告警id，主键
+faultType:		告警类型
+faultLevel：	告警级别
+siteId:			告警所属节点
+deviceType:		设备类型
+deviceName:		设备名称
+faultFirstTime:	首次告警时间
+faultLastTime:	最后告警时间
+dealTime:		人工处理时间
+dealStatus:		人工处理状态，0未处理，1处理中，2已处理，3人工消除
+dealUser:		处理人账号
+dealPlanDesc:	处理方案描述
+faultDesc:		告警描述
+faultStatus:	告警状态
+
+接口
+/fault/history/list,传递参数,faultFirstTime,faultLastTime,siteId,deviceType,faultType,faultLevel,dealStatus,dealUser
+/fault/history/deal,人工处理，id[]，dealUser，dealPlanDesc
+
+模拟数据
+[{"id":1,"faultType":13158,"faultLevel":2,"siteId":1358,"deviceType":"Server","deviceName":"server_192.168.125.44","faultFirstTime":123123123,
+"faultLastTime":123123123123,"dealTime":123123123123,"dealStatus":1,"dealUser":"u1","dealPlanDesc":"重启服务器","faultDesc":"服务器离线"},...]
+
+
+
+*************************************************设备快照接口
+/deviceStatus/snapshoot/list, 传递参数，siteId
+siteId:			设备所属节点
+deviceId:		设备id，设备的主键
+deviceName:		设备名称
+deviceIp:		设备ip
+deviceType:		设备类型
+deviceStatus:	在线状态，0不在线，1在线
+statusTime:		状态抓取时间
+faultLevel:		告警级别
+
+模拟数据
+{
+"Camera":[{"siteId":1358,"deviceId":"camera_192.168.123.15","deviceName":"D出口","deviceIp":"192.168.123.15","deviceStatus":1,"statusTime":123123123123,
+"faultLevel":0,"statusInfo":{....}}},...],
+
+"Server":[{"siteId":1358,"deviceId":"server_192.168.123.15","deviceName":"西单tvs","deviceIp":"192.168.123.15","deviceStatus":0,"statusTime":123123123123,
+"faultLevel":2,"statusInfo":{....}}},...],
+
+"Switch":[{"siteId":1358,"deviceId":"switch_192.168.123.15","deviceName":"西四交换机","deviceIp":"192.168.32.15","deviceStatus":0,"statusTime":123123123123,
+"faultLevel":1,"statusInfo":{....}}},...],
+
+"Ipsan":[{"siteId":1358,"deviceId":"ipsan192.168.123.15","deviceName":"西四ipsan1","deviceIp":"192.168.32.15","deviceStatus":0,"statusTime":123123123123,
+"faultLevel":1,"statusInfo":{....}}},...],
+
+"other":[{"siteId":1358,"deviceId":"ipsan192.168.23.15","deviceName":"机房客户端","deviceType":"pcTerminal","deviceIp":"192.168.32.15","deviceStatus":0,"statusTime":123123123123]
+}
+
+
+*************************************************设备状态接口,同上
+/deviceStatus/list,有id返回一个对象，无id返回一个数组，deviceType,siteId,
+[{"siteId":1358,"deviceId":"server_192.168.123.15","deviceName":"西单tvs","deviceIp":"192.168.123.15","deviceStatus":0,
+"statusTime":123123123123,"faultLevel":2,"statusInfo":{....}},...]
+
+服务器(Server)
+cpu:					CPU实时使用率
+memory:					内存实时使用率
+fanStatus:				风扇状态
+mainboardTemperature:	主板温度
+diskCapacity:			磁盘总容量
+diskUsage:				磁盘使用
+diskUsageRate:			硬盘使用率
+diskStatus:				磁盘状态
+memoryCapacity:			内存容量
+memoryUsage:			内存使用
+
+"statusInfo":{"cpu":"30%","memory":"50%","fanStatus":"正常","mainboardTemperature":"38度","diskCapacity":"1500M","diskUsage":"300M","diskUsageRate":"30%",
+"diskStatus":"正常","memoryCapacity":"16G","memoryUsage":"8G"}
+
+交换机(Switch)
+cpu:			CPU实时使用率
+memory:			内存实时使用率
+portTotal:		端口总数
+portInfo:[
+{
+id:
+name:
+status:			是否在线
+flowIn:			接收速率
+flowOut:		发送速率
+},...]
+
+"statusInfo":{"cpu":"30%","memory":"50%","portTotal":48,"portInfo":[{"id":"0","name":"1口","status":"在线","flowIn":"100mb/s","flowOut":"10mb/s"},....]}
+
+存储设备（Ipsan）
+cpu:			CPU实时使用率
+memory:			内存实时使用率
+diskCapacity:	磁盘总容量
+portTotal:		槽位总数
+portInfo:[
+{
+id:
+name:
+capacity:		容量
+status:			状态，在线，告警等
+},...]
+
+"statusInfo":{"cpu":"30%","memory":"50%","diskCapacity":"48T","portTotal":12,"portInfo":[{"id":"0","name":"1口","capacity":"4T","status":"正常"},....]}
+
+PDU(PDU)
+totalFlow:		合计流量
+voltage:		电压
+power:			功率
+totalPower:		合计功耗
+breaker:		断路器
+temperature:	温度
+humidity:		湿度
+pressure:		压力
+portTotal:		端口总数
+portInfo:[
+{
+id:
+name:
+status:			是否在线
+voltage:		电压
+electricity:	电流
+},...]
+
+"statusInfo":{"totalFlow":"50%","voltage":"48T","power":12,"totalPower":"","breaker":"","temperature":"","humidity":"","pressure":"",
+"portTotal":"12","portInfo":[{"id":"0","name":"1口","status":"正常","voltage":"220v","electricity":"20A"},...]}
+
+
+
+*************************************************告警类型枚举接口：
+/enumeration/faultType/list
+id:
+name:
+
+模拟数据
+[{"id":380001,"name":"设备离线"},.....]
+
+*************************************************设备类型枚举接口：
+/enumeration/deviceType/list
+id:
+name:
+
+模拟数据
+[{"id":"Server","name":"服务器"},.....]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

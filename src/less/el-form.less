@@ -1,0 +1,155 @@
+.el-form.el-form--inline {
+  .el-form-item {
+    width: 48%;
+    .el-form-item__content {
+      margin-left: 0;
+    }
+  }
+  .btns {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+/* form 表单 */
+.nv-form {
+  .el-form-item {
+    &.has-tip {
+      margin-bottom: 0 !important;
+    }
+  
+    &.is-error {
+      margin-bottom: 0 !important;
+      .el-form-item__error {
+        position: static;
+        padding: 4px 0 6px;
+      }
+    }
+  }
+}
+.el-form {
+  .el-cascader__label,
+  .el-form-item__content, 
+  .el-form-item__label,
+  .el-input{
+    font-size: 12px;
+  }
+  .el-form-item__label {
+    width: 150px;
+  }
+  .el-form-item__content {
+    margin-left: 150px;
+    .el-input,
+    .el-textarea {
+      width: 300px;
+    }
+  }
+  .el-input__inner{
+    height:30px;
+  }
+  .el-form-item {
+    margin-bottom: 16px;
+  }
+  .el-date-editor {
+    .el-range__icon, .el-range-separator{
+      line-height: 22px;
+    }
+    .el-range-input {
+      vertical-align:top;
+    }
+    .el-range__close-icon {
+      line-height: 22px;
+    }
+  }
+  .tip {
+    display: block;
+    line-height: 24px;
+    color: #8E8E8E;
+  }
+  .tip:before{
+    font-size: 12px;
+    margin-right: 3px;
+    color: #ff8888;
+  }
+  .el-form-item__error{
+    z-index: 100;
+  }
+  .el-button {
+    padding: 6px 20px;
+    .icon-detail { 
+      font-size: 12px;
+    }
+  }
+}
+
+.el-switch {
+  font-size: 12px;
+  .el-switch__label {
+    position: absolute;
+    top: -1px;
+    visibility: hidden;
+    span {
+      font-size: 12px;
+      transform: scale(0.85);
+    }
+  }
+  .el-switch__label--left.is-active {
+    visibility: visible;
+    right: -3px;
+    z-index: 1000;
+    span {
+      color: #fff;
+    }
+  }
+  .el-switch__label--right.is-active {
+    visibility: visible;
+    right: 4px;
+    z-index: 1000;
+  }
+}
+.el-select {
+  .el-input .el-select__caret {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-input, .el-input__inner {
+    height: 30px !important;
+    font-size: 12px;
+  }
+  .el-select__caret {
+    font-size: 12px;
+  }
+}
+.el-select-dropdown {
+  .el-select-dropdown__item{
+    font-size: 12px;
+  }
+}
+// 下拉框
+.el-dropdown-menu {
+  .el-dropdown-menu__item{
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+.el-checkbox__label {
+  font-size: 12px !important;
+}
+.el-input{
+  input {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .el-input-group__append {
+    font-size: 12px;
+  }
+}
+
+.el-button {
+  padding: 6px 20px;
+  font-size: 12px;
+  .icon-detail { 
+    font-size: 12px;
+  }
+}

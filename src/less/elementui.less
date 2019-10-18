@@ -1,0 +1,249 @@
+.el-collapse-item {
+  [class*=" el-icon-"] {
+    line-height: inherit !important;
+  }
+}
+.el-menu{
+  height: 50px;
+  line-height: 50px;
+  .el-submenu .el-submenu__title {
+    height: 50px;
+    line-height: 50px;
+  }
+  font-weight: normal;
+  .icon {
+    padding: 0 8px;
+    font-size: 18px;
+  }
+}
+.el-menu--horizontal{
+  border-bottom: none;
+}
+.el-menu--horizontal .el-submenu {
+  &>.el-menu {
+    top:50px;
+  }
+  .el-menu-item {
+    padding: 0 20px;
+  }
+}
+/* 对话框 */
+.el-dialog{
+  .el-dialog__header {
+    height: 40px;
+    padding: 0 20px;
+    background: #41aeff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    .el-dialog__title {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    .el-dialog__headerbtn {
+      padding: 9px;
+      margin-right: -15px;
+      top: 1px;
+    }
+
+    .el-dialog__headerbtn:focus .el-dialog__close,
+    .el-dialog__headerbtn:hover .el-dialog__close {
+      font-size: 20px;
+    }
+
+    .el-dialog__headerbtn .el-dialog__close {
+      color: #fff !important;
+      font-size: 20px;
+    }
+  }
+  .el-dialog__body{
+    max-height: 520px;
+    overflow-y: auto;
+    padding: 20px;
+  }
+}
+
+.el-table{
+  th, td {
+    padding: 4px 0;
+  }
+  .empty-info {
+    .desc {
+      height: 20px;
+      line-height: 20px;
+      color: #606266;
+      padding: 0 10px;
+    }
+  }
+}
+
+// 提示框
+.el-message-box {
+  border: none;
+  .el-message-box__header {
+    background-color: #66b1ff;
+    padding: 10px 15px 10px;
+  }
+  .el-message-box__title {
+    font-size: 12px;
+    color: #fff;
+  }
+  .el-message-box__close.el-icon-close {
+    color:#fff;
+  }
+  .el-message-box__headerbtn {
+    top: 12px;
+  }
+}
+
+.el-loading-mask {
+  z-index: 1000;
+}
+
+
+
+// 提示信息
+.el-tooltip__popper.is-light {
+  color: #2d87f9;
+  padding: 10px 20px;
+  border: 1px solid #96c3fc !important;
+  border-radius: 2px;
+  background: #f6f9fe !important;
+  box-shadow: 0 0 8px 0 #96c3fc;
+
+  .popper__arrow {
+    border-top-color: #96c3fc !important;
+  }
+}
+
+span.tip {
+  display: block !important;
+  padding: 4px 0;
+  font-size: 12px;
+  color: #8E8E8E;
+  line-height: 20px;
+  & + .el-form-item__error {
+    padding: 0 0 10px !important;
+  }
+
+  .tip-item {
+    &::before {
+      content: "\e62a";
+      padding-right: 4px;
+      font-size: 14px;
+      color: #67c23a;
+    }
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+  }
+}
+
+.tip-inline {
+  margin-left: 20px;
+  font-size: 12px;
+  font-style: normal;
+  color: #8E8E8E;
+  line-height: 20px;
+}
+
+/* 分页 */
+.el-pagination{
+  padding: 2px 0px;
+  button,span {
+    display: inline-block;
+    font-size: 13px;
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 0 6px;
+  }
+  button:hover {
+    color: #20a0ff;
+  }
+  button.disabled {
+    color: #e4e4e4;
+    background-color: #fff;
+    cursor: not-allowed;
+  }
+  .btn-prev, .btn-next {
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+    background: 50% no-repeat #fff;
+    background-size: 16px;
+    border: 1px solid #d3dce6;
+    cursor: pointer;
+    margin: 0;
+    color: #99a9bf;
+  }
+  .el-input {
+    width: 150px !important;
+  }
+  .tip{ background-color: transparent; }
+  .el-pagination__sizes{
+    float:left;
+  }
+  .el-icon-arrow-left:before {
+    content: "< 上一页";
+  }
+  .el-icon-arrow-right:before {
+    content: "下一页 >";
+  }
+  .el-pagination__jump{
+    .el-pagination__editor {
+      width: 50px;
+      border: none;
+      padding: 0 5px;
+    }
+    .el-input__inner{
+      padding: 0 10px;
+      height: 28px;
+    }
+    .el-input {
+      width: 80px !important;
+    }
+  }
+
+  .el-pagination__sizes .el-input .el-input__inner  {
+    font-size: 12px;
+  }
+  .el-pager {
+    li {
+      padding: 0 4px;
+      border: 1px solid #d3dce6;
+      border-right: 0;
+      background: #fff;
+      font-size: 13px;
+      min-width: 28px;
+      height: 28px;
+      line-height: 28px;
+      box-sizing: border-box;
+      text-align: center;
+      font-weight: normal;
+    }
+    li.active {
+      border-color: #20a0ff;
+      background-color: #20a0ff;
+      color: #fff;
+      cursor: default;
+    }
+  }
+}
+
+.el-message--error {
+  div.msg-list {
+    p {
+      height: 24px;
+      line-height: 24px;
+      font-size: 12px;
+      color: red;
+    }
+  }
+}

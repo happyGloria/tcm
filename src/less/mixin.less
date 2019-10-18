@@ -1,0 +1,67 @@
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.hide {
+  display: none;
+}
+.x-y-center-parent {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.x-y-center-child {
+	position:absolute;
+  top:50%;
+  left:50%;
+	transform:translate(-50%,-50%);
+}
+.center-vertical {
+  &:before {
+    content: '';
+    height: 90%;
+    width: 1px;
+    margin-left: -1px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  & > * {
+    display: inline-block;
+    word-break: break-all;
+    vertical-align: middle;
+  }
+}
+
+.ellipsis(@w) {
+  max-width: @w;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsis_r(@w) {
+  max-width: calc(~"100% - @{w}");
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text_distribute(@w) {
+  width: @w;
+  display: block;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: inter-ideograph;
+}

@@ -1,0 +1,613 @@
+.tc, .ec {
+  width: 100%;
+  height: 100%;
+
+  .toolbar {
+    position: relative;
+    height: 40px;
+
+    .btns {
+      position: absolute;
+      left: 0;
+
+      .el-dropdown span > i {
+        line-height: 7px;
+        font-size: 10px;
+      }
+      .el-button + .el-button {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .search {
+    position: absolute;
+    height: 25px;
+    width: 180px;
+    right: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 2px;
+    text-align: left;
+
+    &.has-filter {
+      right: 25px;
+    }
+  }
+
+  .search form {
+    line-height: normal;
+  }
+
+  .search input {
+    width: calc(~'100% - 30px');
+    padding: 3px 0 3px 10px;
+    border: 0;
+    background: transparent;
+    border-radius: 15px;
+    color: #7e7e7e;
+    font-size: 12px;
+  }
+
+  .search input:focus {
+    outline: 0;
+  }
+
+  .search .el-tooltip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 24px;
+    padding-right: 3px;
+    cursor: pointer;
+    float: right;
+
+    span {
+      position: static;
+      font-size: 14px;
+      color: #8e8e8e;
+    }
+
+    &:hover {
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .search span {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+
+  .filter {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 0;
+
+    .filter-content {
+      position: relative;
+      top: 0;
+      float: right;
+      background: #fff;
+      z-index: 99999;
+      box-shadow: 5px 5px 20px 0px #ccc;
+    }
+
+    > button.el-button {
+      padding: 6px 0;
+      float: right;
+      font-size: 16px;
+      color: #8e8e8e;
+
+      &:hover {
+        color: #3bc3ff;
+      }
+    }
+  }
+
+  .el-pagination {
+    height: 40px;
+    padding: 12px 0 0 0;
+    text-align: center;
+
+    .el-pagination__total,
+    .el-pagination__sizes {
+      float: left;
+    }
+    .el-pagination__jump {
+      float: right;
+    }
+  }
+}
+
+.tc {
+  .jt {
+    table tbody tr td .name-old > a {
+      color: #3a617a;
+      > span.ico {
+        color: #3a617a;
+      }
+    }
+  }
+}
+
+.ec {
+  border: 1px solid #eee;
+
+  .toolbar {
+    border-bottom: 1px solid #eee;
+    padding: 6px;
+
+    .search {
+      position: relative;
+      width: 220px;
+      margin: 0 auto;
+    }
+    .search span {
+      top: 5px;
+    }
+  }
+
+  .name a {
+    cursor: pointer;
+  }
+
+  .jt .jb-c {
+    height: 100%;
+  }
+
+  .jt table {
+    border: 0 !important;
+  }
+  .jt .js {
+    right: 0;
+    z-index: 1031;
+  }
+  .jt table td {
+    border: 0 !important;
+  }
+
+  .jt:hover .js {
+    visibility: visible;
+  }
+
+  .js {
+    visibility: hidden;
+  }
+
+  .el-checkbox {
+    margin-right: 3px;
+  }
+}
+
+.jt {
+  position: relative;
+  width: 100%;
+  height: calc(~'100% - 40px');
+
+  &.jp {
+    height: calc(~'100% - 80px');
+  }
+
+  .js, .jb, .jl {
+    top: 0;
+    bottom: 0;
+  }
+
+  .jb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 1030;
+  }
+
+  .jb-c {
+    width: 100%;
+    height: calc(~'100% - 41px');
+
+    > div.center-vertical {
+      height: 100%;
+    }
+
+    .add-info {
+      margin-left: calc(~'50% - 70px');
+      text-align: center;
+      cursor: pointer;
+      color: #888;
+      font-size: 14px;
+
+      div {
+        margin-top: 10px;
+      }
+
+      a {
+        font-size: 12px;
+        color: #4cb1ff;
+
+        &:hover {
+          color: #00a2ff;
+
+          i {
+            color: #00a2ff;
+          }
+        }
+
+        i {
+          font-size: 12px;
+          font-weight: 900;
+          color: #4cb1ff;
+          margin-left: 10px;
+        }
+      }
+
+      > i {
+        margin-left: 21px;
+      }
+
+      .ico-tip {
+        position: relative;
+        top: 3px;
+        margin-right: 6px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .js {
+    position: absolute;
+    right: -18px;
+    width: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    > div {
+      width: 1px;
+    }
+  }
+
+  .jl {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+    table {
+      table-layout: auto;
+
+      th {
+        background-color: #eef1f6;
+      }
+    }
+  }
+
+  .jb-h th {
+    &:hover .drag {
+      visibility: visible;
+    }
+  }
+
+  .drag {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    bottom: 10px;
+    width: 7px;
+    height: 19px;
+    border-radius: 7px;
+    cursor: col-resize;
+    background-color: #ccc;
+    visibility: hidden;
+  }
+
+  .edit {
+    width: 100%;
+    text-align: right;
+  }
+
+  &.readonly .color {
+    cursor: default;
+  }
+
+  .color {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    top: 1px;
+    position: relative;
+    background-color: #9e9e9e;
+    cursor: pointer;
+  }
+
+  .blue {
+    background-color: #3bc3ff;
+  }
+
+  .red {
+    background-color: #ff6661;
+  }
+
+  .grey {
+    background-color: #9e9e9e;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+  }
+
+  table tbody tr:first-child td {
+    border-top: 1px solid transparent;
+  }
+
+  table thead tr th:first-child,
+  table tbody tr td:first-child {
+    border-left: 0;
+  }
+
+  table th {
+    height: 40px;
+    padding: 0 10px;
+    color: #303845;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  table td {
+    min-width: 50px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  table th {
+    position: relative;
+    overflow: hidden;
+  }
+
+  table tbody tr:hover {
+    background-color: #eee;
+  }
+
+  table tbody tr.active {
+    background-color: #edf7ff;
+  }
+  table tbody tr td .name {
+    width: 100%;
+    height: 39px;
+    position: relative;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    .el-loading-mask {
+      background-color: transparent !important;
+    }
+    .el-loading-spinner {
+      text-align: right;
+    }
+    .circular {
+      width: 25px;
+    }
+
+    > a {
+      width: auto;
+      height: 39px;
+      outline: 0;
+      color: #666;
+      line-height: 39px;
+      display: inline-block;
+      vertical-align: top;
+
+      span.ico {
+        position: relative;
+        top: -15px;
+        margin-right: 5px;
+        color: #3aa8ff;
+        font-size: 15px;
+      }
+
+      span.ellipsis {
+        color: #666;
+        font-size: 12px;
+        line-height: 39px;
+        display: inline-block;
+      }
+
+      span.el-checkbox__input {
+        top: 12px;
+      }
+
+      > label {
+        height: 39px;
+        width: calc(~'100% - 15px');
+        overflow: hidden;
+        vertical-align: top;
+
+        > span {
+          vertical-align: top;
+          > a {
+            font-size: 0;
+          }
+        }
+      }
+    }
+
+    > span {
+      display: inline-block;
+      line-height: normal;
+      padding: 14px 7px 14px 6px;
+      vertical-align: top;
+
+      > i {
+        position: relative;
+        top: 0;
+        color: #aaa;
+        cursor: pointer;
+        font-size: 10px;
+      }
+    }
+  }
+  table tbody tr td .name-old {
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+
+    > a {
+      width: auto;
+      height: 39px;
+      outline: 0;
+      line-height: 39px;
+      display: inline-block;
+      color: #666;
+
+      a {
+        color: #666;
+      }
+
+      > span {
+        float: none;
+        font-weight: 100;
+        font-size: 15px;
+      }
+
+      > span, a span {
+        position: relative;
+        top: 0;
+        margin-right: 4px;
+        color: #3aa8ff;
+      }
+    }
+
+    > span {
+      display: inline-block;
+      line-height: normal;
+      padding: 10px 6px 5px;
+
+      > i {
+        position: relative;
+        top: -1px;
+        color: #aaa;
+        cursor: pointer;
+        font-size: 10px;
+      }
+    }
+
+    .el-loading-mask {
+      background-color: transparent !important;
+    }
+    .el-loading-spinner {
+      text-align: right;
+    }
+    .circular {
+      width: 25px;
+    }
+  }
+
+
+  table tbody tr td .name:hover > span.add-node,
+  table tbody tr td .name:hover > span.del-node {
+    visibility: visible;
+  }
+
+  table tbody tr td .name > span.add-node,
+  table tbody tr td .name > span.del-node {
+    visibility: hidden;
+    position: absolute;
+    right: -1px;
+    height: 100%;
+    color: #fff;
+    background: #20a0ff;
+  }
+
+  table tbody tr td .name > span.add-node a,
+  table tbody tr td .name > span.del-node a {
+    color: #fff;
+  }
+
+  table tbody.no-line .line-x {
+    border-left: 0;
+    width: 0;
+  }
+
+  table tbody.no-line .line-x:after {
+    width: 0;
+  }
+
+  table tbody.no-line .line-y {
+    border-left: 0;
+    width: 10px;
+  }
+
+  table tbody .line-x, table tbody .line-y {
+    display: inline-block;
+  }
+
+  table tbody .line-x {
+    border-left: 1px dashed #999;
+    vertical-align: top;
+    width: 10px;
+    height: 100%;
+  }
+
+  table tbody .line-x:after {
+    content: '';
+    display: block;
+    border-bottom: 1px dashed #999;
+    height: 15px;
+    width: 10px;
+    vertical-align: top;
+  }
+
+  table tbody .line-x.last {
+    height: 12px !important;
+  }
+
+  table tbody .line-y {
+    border-left: 1px dashed #999;
+    height: 100%;
+    width: 20px;
+  }
+
+  table tbody .line-y.last {
+    border-left: 0 dashed #999;
+  }
+
+  table tbody .line-y.first {
+    border-left: 0 dashed #999;
+  }
+
+  table tbody .no-open {
+    height: 18px;
+    padding: 0 11.5px !important;
+  }
+
+  table tbody .name-old .no-open {
+    height: 18px;
+    padding: 0 9.22px !important;
+  }
+
+  table tbody .line-x.no-border {
+    border-left: 0 dashed #999;
+  }
+
+  table tbody .line-x.no-border:after {
+    border-bottom: 0 dashed #999;
+  }
+}
